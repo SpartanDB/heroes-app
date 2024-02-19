@@ -8,7 +8,7 @@ import { HeroesService } from '../../services/heroes.service';
   styles: ``,
 })
 export class ListPageComponent implements OnInit {
-  public heroes: Hero[] = [];
+  public heroes?: Hero[];
 
   constructor(private heroesService: HeroesService) {}
 
