@@ -3,7 +3,6 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, catchError, of } from 'rxjs';
 import { Hero } from '../interfaces/hero.interface';
 import { environment } from '../../../environments/environments';
-import { HeroesModule } from '../heroes.module';
 
 @Injectable({ providedIn: 'root' })
 export class HeroesService {
@@ -18,5 +17,11 @@ export class HeroesService {
     return this.http
       .get<Hero>(`${this.baseUrl}/heroes/${id}`)
       .pipe(catchError((error) => of(undefined)));
+  }
+
+  getSuggestions(query: string): Observable<Hero[]> {
+    return this.http.get<Hero[]>(
+      `${this.baseUrl}/heroes?q=${encodeURI(query)}&_limit=6`
+    );
   }
 }
