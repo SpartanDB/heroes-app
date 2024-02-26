@@ -21,7 +21,8 @@
       "publisher": "DC Comics",
       "alter_ego": "Kal-El",
       "first_appearance": "Action Comics #1",
-      "characters": "Kal-El"
+      "characters": "Kal-El",
+      "alt_img": "https://i.pinimg.com/474x/db/15/ba/db15bac66d1fb1794d53eaa90e5af7db.jpg"
     },
     {
       "id": "dc-flash",
@@ -166,6 +167,15 @@
       "alter_ego": "Norrin Radd",
       "first_appearance": "The Fantastic Four #48",
       "characters": "Norrin Radd"
+    },
+    {
+      "id": "rUiNxAT",
+      "superhero": "Daniel",
+      "publisher": "DC Comics",
+      "alter_ego": "SpartanDB",
+      "first_appearance": "Conttrole 2021",
+      "characters": "Daniel",
+      "alt_img": "https://static.wikia.nocookie.net/aliens/images/f/f1/MasterChief.jpg"
     }
   ]
 }
