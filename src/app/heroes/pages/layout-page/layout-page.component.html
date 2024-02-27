@@ -25,7 +25,9 @@
 
     <span class="spacer"></span>
 
-    <button mat-button>
+    <span>{{ user?.user | uppercase }}</span>
+
+    <button mat-button (click)="onLogout()">
       Logout
     </button>
 
