@@ -1,1 +1,17 @@
-<p>list-page works!</p>
+<h1>Listado de Heroes</h1>
+
+<mat-divider></mat-divider>
+
+<ng-template #divLoading>
+  <mat-grid-list cols="1">
+    <mat-grid-tile>
+      <mat-spinner></mat-spinner>
+    </mat-grid-tile>
+  </mat-grid-list>
+</ng-template>
+
+<div *ngIf="heroes; else divLoading" class="grid bm-8 pt-2">
+  <div *ngFor="let hero of heroes" class="col-12 sm:col-4 md:col3 xl:col-2">
+    <heroes-hero-card [hero]="hero"></heroes-hero-card>
+  </div>
+</div>
